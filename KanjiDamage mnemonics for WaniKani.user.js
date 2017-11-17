@@ -8,7 +8,7 @@
 // @match            *://www.wanikani.com/*/kanji*
 // @match            *://www.wanikani.com/lesson/session*
 // @author           Abraham Gross
-// @license          KanjiDamage mnemonics for WaniKani by Abraham Gross is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.
+// @license          MIT License Copyright (c) 2017 Abraham Gross
 // ==/UserScript==
 
 //First and foremost, I would like to give a MASSIVE thanks to KanjiDamage.com for having made an amazing index of great mnemonics!!!
