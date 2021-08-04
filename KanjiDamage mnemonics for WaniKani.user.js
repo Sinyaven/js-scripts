@@ -53,44 +53,46 @@ var htmls = {};
                 if (getKDPage() !== undefined) console.log("The KanjiDamage page is:   " + getKDPage().substring(29));
 
                 //meaning
-                mgetElement = document.getElementsByClassName("span12")[1];
-                mlocation = mgetElement.childNodes[mgetElement.childNodes.length-7];
+                mgetElement = document.getElementById("meaning");
+                mlocation = document.getElementById("note-meaning");
                 msection = document.createElement("SECTION");
                 mp = document.createElement("P");
                 msection.appendChild(mp);
-                mheading = document.createElement("H2");
+                mheading = document.createElement("H3");
                 mheading.innerHTML = "<a class='kanjidamage_a' target='_blank'>KanjiDamage</a> Meaning Mnemonic";
                 msection.appendChild(mheading);
                 mp2 = document.createElement("p");
-                mp2.setAttribute("id", "meaning");
+                mp2.setAttribute("id", "kd_meaning");
                 msection.appendChild(mp2);
                 mgetElement.insertBefore(msection, mlocation);
                 //mmnemonic = document.createTextNode(getMeaning());
-                document.getElementById("meaning").innerHTML = "Loading...";
+                document.getElementById("kd_meaning").innerHTML = "Loading...";
                 getMeaning(function(meaning) {
-                    document.getElementById("meaning").innerHTML = meaning;
-                    if (document.getElementById("meaning").innerHTML === "" ) document.getElementById("meaning").innerHTML = "This Kanji has no meaning mnemonic";
+                    document.getElementById("kd_meaning").innerHTML = meaning;
+                    if (document.getElementById("kd_meaning").innerHTML === "" ) document.getElementById("kd_meaning").innerHTML = "This Kanji has no meaning mnemonic";
                 });
 
                 //reading
                 //console.log(getKDPage());
-                mlocation = mgetElement.childNodes[mgetElement.childNodes.length-5];
+                mgetElement = document.getElementById("reading");
+                mlocation = document.getElementById("note-reading");
+                //console.log(mlocation.parent);
                 msection = document.createElement("SECTION");
                 mp = document.createElement("P");
                 msection.appendChild(mp);
-                mheading = document.createElement("H2");
+                mheading = document.createElement("H3");
                 mheading.innerHTML = "<a class='kanjidamage_a' target='_blank'>KanjiDamage</a> Onyomi Mnemonic";
                 msection.appendChild(mheading);
                 mp2 = document.createElement("table");
-                mp2.setAttribute("id", "readingO");
+                mp2.setAttribute("id", "kd_readingO");
                 msection.appendChild(mp2);
                 mgetElement.insertBefore(msection, mlocation);
                 //console.log(getOnyomi());
 
                 getOnyomi(function(onyomi) {
-                    d1 = document.getElementById('readingO');
+                    d1 = document.getElementById('kd_readingO');
                     d1.insertAdjacentHTML('beforeend', onyomi);
-                    table = document.getElementById("readingO");
+                    table = document.getElementById("kd_readingO");
                     if (table.innerText.length < 10) {
                         table.rows[0].cells[0].setAttribute("id", "rowS");
                         document.getElementById("rowS").insertAdjacentHTML('afterend', '<td id="cell" style="width:90%"><p><p> This Kanji has no special reading mnemonic (the meaning mnemonic usually includes the reading mnemonic in it) .</p></p></td>');
