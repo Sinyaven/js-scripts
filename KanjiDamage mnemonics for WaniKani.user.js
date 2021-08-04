@@ -9,7 +9,7 @@
 // @match            *://www.wanikani.com/*/kanji*
 // @match            *://www.wanikani.com/lesson/session*
 // @author           Abraham Gross
-// @license          MIT
+// @license          MIT License Copyright (c) 2017 Abraham Gross
 // ==/UserScript==
 
 //First and foremost, I would like to give a MASSIVE thanks to KanjiDamage.com for having made an amazing index of great mnemonics!!!
