@@ -10,7 +10,7 @@
 // @match            *://www.wanikani.com/lesson/session
 // @author           Abraham Gross
 // @license          MIT License Copyright (c) 2017 Abraham Gross
-// @require          https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=969075
+// @require          https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=972944
 // ==/UserScript==
 
 //First and foremost, I would like to give a MASSIVE thanks to KanjiDamage.com for having made an amazing index of great mnemonics!!!
