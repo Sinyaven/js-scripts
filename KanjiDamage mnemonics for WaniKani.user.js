@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name             KanjiDamage mnemonics for WaniKani
-// @version          1.4
+// @version          1.5
 // @description      Displays additional mnemonics for the given kanji.
 // @namespace        https://github.com/grenzionky/KanjiDamage-mnemonics-for-WaniKani/blob/master/KanjiDamage%20mnemonics%20for%20WaniKani.user.js
 // @supportURL       https://community.wanikani.com/t/userscript-kanjidamage-mnemonics-for-wanikani/18845
